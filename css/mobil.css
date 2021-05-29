@@ -1,14 +1,16 @@
-@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Varela+Round&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@500&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Lato&display=swap');
+/*
+@mobile:          ~"only screen and (max-width: 750px)";
+@tablet:          ~"only screen and (min-width: 751px)";
+@tablet-strict:   ~"only screen and (min-width: 751px) and (max-width: 949px)";
+@tablet-desktop:  ~"only screen and (min-width: 751px)";
+@desktop:         ~"only screen and (min-width: 950px)";
+@desktop-strict:  ~"only screen and (min-width: 950px) and (max-width: 1199px)";
+@desktop-xl:      ~"only screen and (min-width: 1200px)";
+*/
 
-* {
-    box-sizing: border-box;
-    margin: 0;
-}
-
-/*COVER*/
+@media screen and (max-width: 750px) {
+    
+       /*COVER*/
 
 .cover {
     background-color: #43a3da;
@@ -59,10 +61,10 @@
     border-radius: 20px;
 }
 
-#h1-scroll-me{
+h1{
     /* margin-top: 5%; */
     color: #f8c61a;
-    font-size: 2em;
+    font-size: 3em;
     font-family: 'Lato';
 }
 
@@ -86,24 +88,24 @@
 
 .section-bg{
    border: 2px solid chartreuse;
-   background-image: url('../img/reunion001.png');
+   background-image: url('../img/reunion001-mobil.jpg');
    background-repeat: no-repeat;
-   /* background-size: cover; */
-   background-size: 100% 100%;
+    /* background-size: cover;  */
+   background-size: auto;
    width: 100%;
    height: 100%;
 } 
 
 
-#container #h1-liveroom {
+#h1-liveroom {
     font-family: 'Varela Round', sans-serif;
     color :#414549;
-    font-size: 5em;
+    font-size: 2em;
     text-align: center;
 }
 
 #logo-envisite{
-    width: 20%;
+    width: 50%;
 }
 
 .container-titre-logo{
@@ -116,13 +118,17 @@
 
 /*TXT IMG MIROIR*/
 .txt-img-miroir{
+     background: orange; 
     display: flex;
-    justify-content: space-around;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
     border: 2px solid red;
 }
 
 .txt-miroir{
     text-align: center;
+    margin-top: 5%;
     color: #414549;
     font-family: 'Open Sans';
 }
@@ -130,6 +136,9 @@
 
 
 .img-miroir{
-    width: 60%; 
+    width: 80%;
 }
 
+
+
+}

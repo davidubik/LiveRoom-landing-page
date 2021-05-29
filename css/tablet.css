@@ -1,14 +1,6 @@
-@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Varela+Round&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@500&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Lato&display=swap');
-
-* {
-    box-sizing: border-box;
-    margin: 0;
-}
-
-/*COVER*/
+@media screen and (min-width: 751px){
+    
+    /*COVER*/
 
 .cover {
     background-color: #43a3da;
@@ -59,10 +51,10 @@
     border-radius: 20px;
 }
 
-#h1-scroll-me{
+h1{
     /* margin-top: 5%; */
     color: #f8c61a;
-    font-size: 2em;
+    font-size: 3em;
     font-family: 'Lato';
 }
 
@@ -95,7 +87,7 @@
 } 
 
 
-#container #h1-liveroom {
+#h1-liveroom {
     font-family: 'Varela Round', sans-serif;
     color :#414549;
     font-size: 5em;
@@ -116,6 +108,7 @@
 
 /*TXT IMG MIROIR*/
 .txt-img-miroir{
+    background: chartreuse; 
     display: flex;
     justify-content: space-around;
     border: 2px solid red;
@@ -123,13 +116,19 @@
 
 .txt-miroir{
     text-align: center;
+    margin-top: 5%;
     color: #414549;
     font-family: 'Open Sans';
 }
 
-
-
-.img-miroir{
-    width: 60%; 
+.txt-img-miroir .txt-miroir .h3-blue{
+    color: #43a3da;
 }
 
+.img-miroir{
+    width: 50%;
+}
+
+
+
+}
